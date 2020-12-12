@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="./css/styleContacto.css">
+    <link rel="stylesheet" type="text/css" href="./css/stylesCV.css">
+</head>
+
+<body>
+    <header id="CabeceraPrincipal">
+
+        <a id="logo-header" href="./index.html">
+            <span class="site-name">Juan Matias Tulli</span>
+            <span class="site-desc">Curriculum Vitae</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="./inicioSesion.html">Ingresar</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- / nav -->
+
+    </header>
+    <!-- / #main-header -->
+
+    <section id="Contenedor">
+
+        <h1>Formulario de contacto</h1>
+
+        <form action="./php/contacto.php" method="post">
+            <div class="elem-group">
+                <label for="name">Tu nombre</label>
+                <input type="text" id="name" name="NombreVisitante" placeholder="Jose Martinez" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
+                <label for="email">Tu email</label>
+                <input type="email" id="email" name="EmailVisitante" placeholder="JoseMartinez@gmail.com" required>
+            </div>
+            <div class="elem-group">
+                <label for="title">Asunto</label>
+                <input type="text" id="title" name="TituloEmail" required placeholder="Complete aqui el asunto" pattern=[A-Za-z0-9\s]{8,60}>
+            </div>
+            <div class="elem-group">
+                <label for="Mensaje">Escriba su mensaje</label>
+                <textarea id="Mensaje" name="MensajeVisitante" placeholder="Di lo que necesitas saber." required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <footer id="main-footer">
+            <p>&copy; 2020 <a href="https://www.linkedin.com/in/jmtulli/">Contacto</a></p>
+        </footer>
+
+    </section>
+
+
+
+</body>
+
+</html>

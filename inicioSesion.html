@@ -1,0 +1,58 @@
+<!--
+Crear un login y una página para registrar a un nuevo usuario con los siguientes datos:
+usuario y contraseña.
+
+
+(index.html) Login 	  -> Si el usuario existe 	 -> principal.html
+(index.html) Login    -> Si el usuario no existe -> (index.html) Login
+ registrar.html       -> Nuevo usuario           -> (index.html) Login
+
+El login tendrá la opción para registrar.
+Usar "estilos.css" en el ejercicio.
+
+-->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ingresar</title>
+    <link rel="stylesheet" type="text/css" href="./css/styleInicioSesion.css">
+    <link rel="stylesheet" type="text/css" href="./css/stylesCV.css">
+</head>
+
+<body>
+    <header id="CabeceraPrincipal">
+
+        <a id="logo-header" href="./index.html">
+            <span class="site-name">Juan Matias Tulli</span>
+            <span class="site-desc">Curriculum Vitae</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="./inicioSesion.html">Ingresar</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- / nav -->
+
+    </header>
+    <!-- / #main-header -->
+    <form action="/php/login_registrar.php" method="POST">
+        <h2>Iniciar sesión</h2>
+        <input type="text" placeholder="&#128273; Usuario" name="usuario" style="font-style: italic;
+        font-family: Georgia, Serif;" required>
+        <input type="password" placeholder="&#128274; Contraseña" name="pass" style="font-style: italic;
+        font-family: Georgia, Serif;" required>
+        <input type="submit" value="Ingresar" name="btningresar" style="font-style: italic;
+        font-family: Georgia, Serif;">
+
+        <br>
+        <a href="./registrar.html" style="float:right; font-style: italic;
+        font-family: Georgia, Serif;">Crear una cuenta</a>
+
+    </form>
+</body>
+
+</html>
